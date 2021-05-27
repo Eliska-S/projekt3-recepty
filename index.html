@@ -21,34 +21,30 @@
                 <img src="images/recepty-logo.svg" alt="Recepty logo">
             </div>
             <div class="hledani">
-                <!--
                 <label for="hledat">Hledat</label>
                 <div class="hledani-skupina">
                     <input type="text" id="hledat" placeholder="Název receptu">
-                    <button>Hledat</button>
+                    <button onclick = "hledat()">Hledat</button>
                 </div>
-                -->
             </div>
+
             <div class="kategorie">
-                <!--
                 <label for="kategorie">Kategorie</label>
-                <select id="kategorie">
+                <select id="kategorie" onchange="filtrujDleKategorie()">
                     <option value=""></option>
-                    <option>Snídaně</option>
-                    <option>Hlavní jídlo</option>
-                    <option>Dezert</option>
+                    <option value="snidane">Snídaně</option>
+                    <option value="hlavniJidlo">Hlavní jídlo</option>
+                    <option value="dezert">Dezert</option>
                 </select>
-                -->
             </div>
+
             <div class="razeni">
-                <!--
                 <label for="razeni">Seřadit</label>
-                <select id="razeni">
+                <select id="razeni" onchange="seradDleHodnoceni()">
                     <option value=""></option>
                     <option value="1">Od nejlepších</option>
                     <option value="2">Od nejhorších</option>
                 </select>
-                -->
             </div>
         </header>
 
@@ -69,7 +65,7 @@
 
         <div class="recept-detail">
             <div class="recept-detail-obrazek">
-                    <img id="recept-foto" src="sem-doplnit-adresu-obrazku.jpg" alt="">
+                    <img id="recept-foto" src="" alt="">
             </div>
 
             <div class="recept-detail-info">
