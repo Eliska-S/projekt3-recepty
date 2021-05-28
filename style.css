@@ -113,6 +113,11 @@ h1 {
     cursor: pointer;
 }
 
+.hledani button:active {
+    background-color: #700c1b;
+    cursor: pointer;
+}
+
 
 .hlavicka select {
     border: 1px solid #feada6;
@@ -201,7 +206,6 @@ h1 {
     position: relative;
 }
 
-/*
 .recept-detail-obrazek::after {
     content: '';
     position: absolute;
@@ -212,7 +216,6 @@ h1 {
     top: 0;
     bottom: 0;
 }
-*/
 
 .recept-detail-obrazek img {
     width: 100%;
